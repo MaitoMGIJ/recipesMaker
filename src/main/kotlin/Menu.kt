@@ -23,9 +23,13 @@ fun showMenu(){
 }
 
 fun makeRecipe(){
+    val ingredients = arrayOf<String>("Water", "Milk", "Meet", "Vegetable", "Fruits", "Cereal", "Eggs", "Oil")
     println("::You're going to make a recipe::")
+    println("::Select the ingredient::")
+    for ((index, ingredient) in ingredients.withIndex()){
+        println("${index + 1}: $ingredient")
+    }
     println("::::")
-    println()
 }
 
 fun getRecipes(){
